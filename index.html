@@ -96,7 +96,7 @@
     padding-right: 0.7rem;
     font-size: 0.75rem;
   }
-    .loader {
+    .loading {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -320,15 +320,13 @@
       </a></div>
     </div>
   </div>
-        <script type="text/javascript">
-  var _showPage = function() {
-  var loader = $("div.loader");
-  var container = $("div.container");
-  loader.css("display","none");
-  container.css("display","block");
-  };
-</script>
-<div>
+  <script type="text/javascript">
+    $(window).load(function()  {
+      $('.loading').hide(); });
 
 </body>
+
+</script>
+
+</script>
 </html>
