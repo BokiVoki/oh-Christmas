@@ -1,29 +1,331 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-  <title>Oh,Christmas</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
-<body>
-  <h2><a href="index.html" target="_blank" title="homepage">메리크리스마스</a></h2>
-  <ol>
-    <li><a href="1.html">Tree</a></li>
-    <li><a href="2.html">Sparkle</a></li>
-    <li><a href="3.html">Carol</a></li>
-    <li><a href="4.html">Santa Claus and Rudolph</a></li>
-  </ol>
+<style media="screen">
 
-  <br>
-  <p style="margin-top:5px;">
-    저눈 크리스마스가 조와욧
-    왜냐묜... 크리스마스는 내가 조와하는 초록과 빨강이 있다..
-    <br>초록과 빨강 그리고 <u>빛나는 반짝이들</u>
-    <br><u>따뜻한 장작불</u> <u>소복소복 쌓이는 눈에 반사되는 빛<u>
-  </p>
-  <img
-    src="https://i.pinimg.com/564x/3a/4c/1b/3a4c1b249741a1d375dbb30ec7f8498e.jpg"
-    style="width:300px">
-  <br><strong>당신두 크리스마스가 조치? </strong><br>
+  body {
+    margin: 0;
+    background: black;
+  }
+  div, section, header, footer, p,h2 {
+  	box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    width: 100%;
+    height: 6vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+  }
+  .name {
+    flex: 2;
+    box-sizing:inherit;
+    border-right: 1px solid black;
+    font-size: 1.6rem;
+  }
+  .space {
+    box-sizing:inherit;
+    flex: 6;
+  }
+  .credit {
+    box-sizing:inherit;
+    flex: 1;
+    border-left:1px solid black;
+    border-right: 1px solid black;
+  }
+  .kr_en {
+    box-sizing:inherit;
+    flex: 1;
+
+  }
+  .row {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 31.33vh;
+  }
+  .box {
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 10%;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    background: white;
+    overflow: hidden;
+  }
+  .box .inbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform:translate(50%,50%);
+    -ms-transform: translate(50%,50%);
+    transform: translate(50%,50%);
+  }
+  .box .inbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    -webkit-transform:translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+  .box.last {
+    border-right: 0;
+  }
+  .box.about {
+    width: 20%;
+
+  }
+  .box.about p {
+    padding-top: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    font-size: 0.75rem;
+  }
+    .loading {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+  }
+
+
+  @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+</style>
+
+<body>
+  <body>
+      <div class="loader">
+    </div>
+
+<div class="container">
+
+  <header>
+    <div class="name"><p>dig deep</p></div>
+    <div class="space"></div>
+    <a href="credit.html" class="credit"><div><p>credit</p></div></a>
+    <div class="kr_en"><p>KR/EN</p></div>
+  </header>
+  <div class="row">
+    <div class="box about">
+      <div class="about">
+      <p>2020년, 준비를 마친 인부들이 이동을 시작했다.<br>
+      온라인으로, 전신의 움직임에서 손가락의 작은 움직임으로, 땅 위에서 픽셀 위로…. <br>
+      수많은 변화 속에서 그들은 존재를 지속할 수 있는 무언가**를 찾아 나섰다.<br>
+      각자가 속한 그리드와 픽셀 위에서, 28명의 인부들은 삽을 들고 더 깊은 아래를 향해 웹 속을 파고든다.<br>
+      그 끝에 발굴해낸 새로운 가능성과 존재의 조각이 궁금하다면, dig deep.</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/1.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/1.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/1.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/1.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/1.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/1.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/1.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/1.mp4" alt="">
+      </a></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+    <div class="box">
+      <div class="inbox">
+        <a href="https://minw0525.000webhostapp.com/v2_member?student=minwoo&lang=ko"><img class="gif"
+          src="image/2.mp4" alt="">
+      </a></div>
+    </div>
+  </div>
+<div>
+  <script type="text/javascript">
+    $(window).load(function(){
+        $(".loading").fadeOut();
+    });
+  </script>
 </body>
 </html>
